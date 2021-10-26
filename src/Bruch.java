@@ -24,9 +24,11 @@ public class Bruch
     {
         // TODO: Die Methode soll den Dezimalwert zum Bruch retournieren
         // Achtung: Ganzzahldivision!
-        if (denominator > 0)
+        if (this.denominator > 0)
         {
-            return (this.numerator / this.denominator);
+            double n = this.numerator;
+            double d = this.denominator;
+            return (n / d);
         }
         else
         {
@@ -37,7 +39,7 @@ public class Bruch
     public String print()
     {
         // TODO: Die Methode soll den Bruch als Text retournieren z.B.: "5 / 7"
-        return "";
+        return this.numerator + " / " + this.denominator;
     }
 
     public Bruch multiplicate(Bruch b2)
