@@ -19,5 +19,4 @@ public class BruchDemoApp
         erg = b24.multiplicate(b15, b23);
         System.out.println("erg.print() = " + erg.print()); // 4 / 60
     }
-
 }

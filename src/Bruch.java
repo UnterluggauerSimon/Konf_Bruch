@@ -2,12 +2,15 @@ public class Bruch
 {
     private int numerator; // Zähler
     private int denominator; // Nenner
+    private double result;
 
     public Bruch(int numerator, int denominator)
     {
         // TODO: Setzen Sie die Attribute entsprechend
         this.numerator = numerator;
         this.denominator = denominator;
+
+
     }
 
     public int getNumerator()
@@ -51,15 +54,14 @@ public class Bruch
          *   => Selbige auch für denominator
          *  Retournieren Sie ihre neue Bruch-Variable
          * */
-
-
-        return null;
+        Bruch result = new Bruch(this.numerator * b2.getNumerator(), this.denominator * b2.getDenominator());
+        return result;
     }
 
     public Bruch multiplicate(Bruch b2, Bruch b3)
     {
         // TODO: Multiplizieren Sie den eigenen Bruch mit b2 und b3
-
-        return null;
+        Bruch result = new Bruch(this.numerator * b2.getNumerator() * b3.getNumerator(), this.denominator * b2.getDenominator() * b3.getDenominator());
+        return result;
     }
 }
