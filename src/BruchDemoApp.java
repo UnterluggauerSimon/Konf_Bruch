@@ -1,6 +1,8 @@
-public class BruchDemoApp {
+public class BruchDemoApp
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         Bruch b24 = new Bruch(2, 4);
         Bruch b15 = new Bruch(1, 5);

@@ -24,7 +24,14 @@ public class Bruch
     {
         // TODO: Die Methode soll den Dezimalwert zum Bruch retournieren
         // Achtung: Ganzzahldivision!
-        return 0;
+        if (denominator > 0)
+        {
+            return (this.numerator / this.denominator);
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     public String print()
